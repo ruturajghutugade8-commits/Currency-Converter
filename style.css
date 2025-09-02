@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+  background: linear-gradient(135deg, #0125f1, #8517c9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card Container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(13, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  color: #fff;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Form Sections */
+.amount p,
+.from p,
+.to p {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #f0f0f0;
+  text-align: left;
+}
+
+.amount input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.amount input:focus {
+  border: 2px solid #00c6ff;
+  outline: none;
+  box-shadow: 0 0 12px rgba(0, 198, 255, 0.6);
+}
+
+/* Dropdowns */
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  flex: 1;
+}
+
+.select-container:hover {
+  border-color: #00c6ff;
+}
+
+.select-container img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.select-container select {
+  border: none;
+  background: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  outline: none;
+}
+
+.select-container select option {
+  color: #333;
+}
+
+/* Swap Arrow */
+.fa-arrow-right-arrow-left {
+  font-size: 28px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.fa-arrow-right-arrow-left:hover {
+  transform: rotate(180deg);
+}
+
+/* Conversion Result */
+.msg {
+  margin: 18px 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #424242;
+  text-shadow: 0 0 3px rgba(144, 146, 145, 0.7);
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+  width: 100%;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .dropdown {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .fa-arrow-right-arrow-left {
+    transform: rotate(90deg);
+  }
+}
